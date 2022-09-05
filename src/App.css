@@ -1,0 +1,5 @@
+body{
+    background-color: var(--bg-primary-color);
+    background-image: url(./assets/background/low-angle-shot-mesmerizing-starry-sky.jpg);
+    background-size: cover;
+  }
