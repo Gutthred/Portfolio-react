@@ -1,6 +1,6 @@
 import React from "react";
-import "./Projects.css";
 import Repo from './githubRepo'
+
 
 
 const Projects = () => {

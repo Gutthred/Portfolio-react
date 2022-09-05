@@ -4,18 +4,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .project__card{
   background: rgba(0,0,0, 0.20);
   display: flex;
   flex-direction: column;
-  height: fit-content;
   padding: 0.5rem;
   border: 1px solid var(--secondary-bg-color);
   border-radius: 1.5rem;
   transition: var(--a-transition);
+  gap: 1rem;
+  margin: 1rem;
 }
 
 .project__card:hover{
@@ -29,12 +30,23 @@
   margin: 1rem 0rem 1rem;
 }
 
+.project__title-img{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  gap: 1rem;
+}
+
 .project__card-img{
   border-radius: 1.5rem;
-  overflow: hidden;
+  overflow: visible;
+  max-width: 3rem;
 }
 
 .project__a{
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
   display: flex;
   flex-direction: row;
   font-size: 0.8rem;

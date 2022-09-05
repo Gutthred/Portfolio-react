@@ -1,6 +1,8 @@
 import React from "react";
 import { useQuery } from "react-query";
 import axios from "axios";
+import "./Projects.css";
+import DefaultIMG from "../../assets/default-project.png";
 
 const githubRepo = () => {
   const { data, isFetching } = useQuery("repos", async () => {
@@ -17,10 +19,12 @@ const githubRepo = () => {
       {data?.map((repo) => {
         return (
           <article key={repo.id} className="project__card">
-            <figure className="project__card-img">
-              <img src={repo.avatar_url} alt={repo.full_name} />
-            </figure>
-            <h3>{repo.name}</h3>
+            <div className="project__title-img">
+              <figure className="project__card-img">
+                <img src={DefaultIMG} alt={repo.full_name} />
+              </figure>
+              <h3>{repo.name}</h3>
+            </div>
             <small className="repo_description">{repo.description}</small>
             <div className="project__a">
               <a

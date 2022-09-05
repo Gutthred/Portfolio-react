@@ -24,7 +24,7 @@ const Header = () => {
           </div>
           <div className="header__icons">
             <IconContext.Provider
-              value={{size: 20}}
+              value={{size: 25}}
             >
               <HeaderSocials />
             </IconContext.Provider>
