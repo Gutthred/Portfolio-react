@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "react-query";
-import axios from 'axios'
+import axios from "axios";
 
 const githubRepo = () => {
   const { data, isFetching } = useQuery("repos", async () => {
@@ -21,9 +21,13 @@ const githubRepo = () => {
               <img src={repo.avatar_url} alt={repo.full_name} />
             </figure>
             <h3>{repo.name}</h3>
-            <small className="description">{repo.description}</small>
+            <small className="repo_description">{repo.description}</small>
             <div className="project__a">
-              <a href={repo.html_url} target="__blank" className="btn btn-primary">
+              <a
+                href={repo.html_url}
+                target="__blank"
+                className="btn btn-primary"
+              >
                 Source code
               </a>
             </div>
