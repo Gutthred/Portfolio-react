@@ -6,34 +6,54 @@ import DefaultIMG from "../../assets/default-project.png";
 
 const githubRepo = () => {
   const { data, isFetching } = useQuery("repos", async () => {
-    const reponse = await axios.get(
+    const response = await axios.get(
       "https://api.github.com/users/gutthred/repos"
     );
 
-    return reponse.data;
+    return response.data;
   });
 
   return (
     <article>
       {isFetching && <span className="loading">Loading ...</span>}
       {data?.map((repo) => {
+        const repoTopics = repo.topics;
+
         return (
           <article key={repo.id} className="project__card">
-            <div className="project__title-img">
-              <figure className="project__card-img">
-                <img src={DefaultIMG} alt={repo.full_name} />
-              </figure>
-              <h3>{repo.name}</h3>
+            <div className="main__content">
+              <div className="project__title-img">
+                <figure className="project__card-img">
+                  <img src={DefaultIMG} alt={repo.full_name} />
+                </figure>
+                <h3>{repo.name}</h3>
+              </div>
+              <small className="repo_description">{repo.description}</small>
+              <div className="project__a">
+                <a
+                  href={repo.html_url}
+                  target="__blank"
+                  className="btn btn-primary"
+                >
+                  Source code
+                </a>
+              </div>
             </div>
-            <small className="repo_description">{repo.description}</small>
-            <div className="project__a">
-              <a
-                href={repo.html_url}
-                target="__blank"
-                className="btn btn-primary"
-              >
-                Source code
-              </a>
+            <div className="project__tecnologies">
+              <div>
+                <small>Tecnologias utilizadas:</small>
+              </div>
+              <div className="project__topics">
+                <article className="project__topic">
+                  {repoTopics.map((e) => {
+                    return (
+                      <p className="topic__text" key={e}>
+                        {e}
+                      </p>
+                    );
+                  })}
+                </article>
+              </div>
             </div>
           </article>
         );
