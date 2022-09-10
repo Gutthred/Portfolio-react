@@ -37,8 +37,8 @@ const about = () => {
             >
               <summary className="about__card">
                 <FiUser className="about__card-icon" />
-                <h5>Sobre mim</h5>
-                <small>Pessoa</small>
+                <h5>About me</h5>
+                {/* <small>Pessoa</small> */}
               </summary>
             </article>
             <article
@@ -51,8 +51,8 @@ const about = () => {
             >
               <summary className="about__card">
                 <FaAward className="about__card-icon" />
-                <h5>Experiencia</h5>
-                <small>Profissional</small>
+                <h5>Experience</h5>
+                {/* <small>Profissional</small> */}
               </summary>
             </article>
             <article
@@ -65,42 +65,52 @@ const about = () => {
             >
               <summary className="about__card">
                 <FaUserGraduate className="about__card-icon" />
-                <h5>Formacao</h5>
-                <small>blah blah </small>
+                <h5>Graduation</h5>
+                {/* <small>blah blah </small> */}
               </summary>
             </article>
           </div>
           <article className="about__text">
             <div className="text__content">
               {textForTag(activeText) == "about-me" && (
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Ullam quas dolorum nisi officiis distinctio. Placeat deserunt,
-                  at porro, est quam ex exercitationem explicabo vel aut dolore
-                  nostrum adipisci et sint quisquam ullam fugiat dignissimos?
-                  Porro.
-                </p>
+                <small>
+                  Olá, me chamo Fabio. <br />
+                  Sou natural de Campinas/SP e atualmente resido em Sorocaba/SP.
+                  <br />
+                  Desde pequeno sou apaixonado pelo mundo da tecnologia, passava
+                  horas em frente ao computador e videogame.
+                  <br /> Minha porta de entrada no mundo da programação foi
+                  quando aos treze anos de idade, criei meu próprio "MOD" de um
+                  jogo chamado Ragnarok Online.
+                </small>
               )}
             </div>
             <div className="text__content">
               {textForTag(activeText) == "experience" && (
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
-                  quis sed ullam non deserunt rerum sit animi dolorum ex,
-                  ratione alias eligendi, vitae inventore sequi quaerat cumque
-                  praesentium.
-                </p>
+                <small>
+                  No atual momento estou realizando uma transição carreira,
+                  <br /> sou formado em contabilidade pela Pontifícia Universidade Catolica
+                  de Campinas - "PUC-CAMP". <br />
+                  Iniciei minha carreira no departamento contábil de um
+                  escritório e a última experiência foi em uma multinacional do
+                  ramo da construção civil, <br /> onde desempenhava a função de
+                  Management Accountant, desenvolvendo e controlando relatórios
+                  que auxiliavam os diretores à tomada de decisões quanto ao
+                  negócio e futuras acquisições.
+                </small>
               )}
             </div>
             <div className="text__content">
               {textForTag(activeText) == "graduation" && (
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                  rerum eum deserunt provident aspernatur tempora quas veritatis
-                  minus sunt quia distinctio sed ducimus, iure repudiandae
-                  dolore possimus eius blanditiis laborum labore assumenda neque
-                  vero aperiam unde vel? Asperiores, iusto facere.
-                </p>
+                <small>
+                  - Cursando Análise e Desenvolvimento de Software - UNIP, <br/>
+                 
+                  - Bacharelado em Ciências Contábeis - PUC-CAMP,<br/>
+        
+                  - Curso extensivo Internacional Accounting Standards - PUC-CAMP,<br/>
+
+                  - Curso extensivo Finanças e Controladoria - USP.<br/>
+                </small>
               )}
             </div>
           </article>

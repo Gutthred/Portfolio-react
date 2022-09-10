@@ -1,6 +1,7 @@
 
 .projects__container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -57,7 +58,9 @@
 }
 
 .project__topics{
-  display: flex;
+  display:flex;
+  flex-wrap: wrap;
+  max-height: max-content;
   gap: 1rem;
 }
 

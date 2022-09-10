@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import Button from "./Button";
 import Alien from "../../assets/imgs/img-header.jpg";
 import HeaderSocials from "./HeaderSocials";
 import { IconContext } from "react-icons";
@@ -10,15 +9,9 @@ const Header = () => {
     <header id="header">
       <div className="container header__container">
         <div className="header__info">
-          <h5>Hello I'm</h5>
-          <h1>Fabio Silva</h1>
-          <h5 className="text-light">Front-end Developer</h5>
-          <Button />
-        </div>
-        <div className="header__socials__img">
-          <div className="header__img">
-            <img src={Alien} alt="Me as Alien" />
-          </div>
+          <h4>Hello I'm</h4>
+          <h1 className="header__name">Fabio Silva</h1>
+          <h3 className="text-light">Front-end Developer</h3>
           <div className="header__socials__text">
             <p className="socials__text"></p>
           </div>
@@ -28,6 +21,11 @@ const Header = () => {
             >
               <HeaderSocials />
             </IconContext.Provider>
+          </div>
+        </div>
+        <div className="header__socials__img">
+          <div className="header__img">
+            <img src={Alien} alt="Me as Alien" />
           </div>
         </div>
       </div>

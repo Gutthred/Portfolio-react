@@ -41,7 +41,7 @@ const githubRepo = () => {
             </div>
             <div className="project__tecnologies">
               <div>
-                <small>Tecnologias utilizadas:</small>
+                <small>Topics (tags):</small>
               </div>
               <div className="project__topics">
                 <article className="project__topic">
