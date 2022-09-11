@@ -84,12 +84,13 @@ article.active {
   .about__container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 35% 50%;
+    grid-template-columns: 25% 60%;
     gap: 15%;
   }
   
   .about__me {
-    margin-left: 5.5rem;
+    margin-left: 30%;
+    max-width: 500px;
     width: 100%;
     aspect-ratio: 1/0.9;
     border-radius: 2rem;
@@ -108,7 +109,9 @@ article.active {
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
-    transition: all 0.5s ease-out; 
+    max-width: 510px;
+    transition: all 0.5s ease-out;
+
   }
 
   .about__me-img:hover {
