@@ -16,7 +16,9 @@ const about = () => {
 
   return (
     <section id="about">
+      <br />
       <h2>Sobre mim</h2>
+      <br />
 
       <div className="container about__container">
         <div className="about__me">
@@ -38,7 +40,6 @@ const about = () => {
               <summary className="about__card">
                 <FiUser className="about__card-icon" />
                 <h5>About me</h5>
-                {/* <small>Pessoa</small> */}
               </summary>
             </article>
             <article
@@ -52,7 +53,6 @@ const about = () => {
               <summary className="about__card">
                 <FaAward className="about__card-icon" />
                 <h5>Experience</h5>
-                {/* <small>Profissional</small> */}
               </summary>
             </article>
             <article
@@ -66,7 +66,6 @@ const about = () => {
               <summary className="about__card">
                 <FaUserGraduate className="about__card-icon" />
                 <h5>Graduation</h5>
-                {/* <small>blah blah </small> */}
               </summary>
             </article>
           </div>

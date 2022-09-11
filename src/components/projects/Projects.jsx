@@ -5,9 +5,9 @@ import Repo from './githubRepo'
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section className="projects__container" id="projects">
       <h2>Projetos</h2>
-      <section className="projects__container">
+      <section className="project__container">
       <Repo/>
       </section>
     </section>

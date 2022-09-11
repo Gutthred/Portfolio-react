@@ -22,6 +22,7 @@ const githubRepo = () => {
         return (
           <article key={repo.id} className="project__card">
             <div className="main__content">
+              <div className="project__title-img-description">
               <div className="project__title-img">
                 <figure className="project__card-img">
                   <img src={DefaultIMG} alt={repo.full_name} />
@@ -29,6 +30,7 @@ const githubRepo = () => {
                 <h3>{repo.name}</h3>
               </div>
               <small className="repo_description">{repo.description}</small>
+              </div>
               <div className="project__a">
                 <a
                   href={repo.html_url}

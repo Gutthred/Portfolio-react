@@ -19,11 +19,7 @@
   --accent-primary-color: #067C70;
   --white-color: #FFFFFF;
   --light-color: #fffaf0;
-
-  --container-width-desktop: 75%;
-  --container-width-mediumDevices: 85%;
-  --container-width-smallDevices: 95%
-
+  
   --a-transition: all 400ms ease;
 
   --font-family-primary: 'Montserrat', sans-serif;;
@@ -54,7 +50,6 @@ body{
 /* COMPONENTS STYLE */
 
 .container{
-  width: var(--container-width-desktop);
   margin: 0 auto;
 }
 
