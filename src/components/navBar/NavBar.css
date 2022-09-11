@@ -52,6 +52,5 @@ nav a.active{
         border-radius: 1.5rem;
         gap: 1rem;
         backdrop-filter: blur(30px);
-        background: rebeccapurple;
     }
 }

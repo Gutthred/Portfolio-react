@@ -11,11 +11,13 @@ const githubRepo = () => {
     );
 
     return response.data;
+  },{
+    staleTime: 2000 * 60, // two minutes
   });
 
   return (
     <article>
-      {isFetching && <span className="loading">Loading ...</span>}
+      {isFetching && <span className="loading__repositories">Loading ...</span>}
       {data?.map((repo) => {
         const repoTopics = repo.topics;
 
