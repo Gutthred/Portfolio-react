@@ -102,6 +102,7 @@ const about = () => {
                 </small>
               )}
             </div>
+            
             <div className="text__content">
               {textForTag(activeText) == "graduation" && (
                 <small>

@@ -24,6 +24,7 @@ const navBar = () => {
       </IconContext.Provider>
     </nav>
   );
+  
 };
 
 export default navBar;

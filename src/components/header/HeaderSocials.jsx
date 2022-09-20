@@ -13,6 +13,7 @@ const HeaderSocials = () => {
         <a href="https://www.instagram.com/gutthred/"><BsInstagram/></a>
     </div>
   )
+  
 }
 
 export default HeaderSocials
