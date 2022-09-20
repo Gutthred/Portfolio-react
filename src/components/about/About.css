@@ -125,10 +125,10 @@ article.active {
     transition: var(--a-transition);
   }
 
-  .about__text{
+  /* .about__text{
     position: relative;
     bottom: 30%;
     left: -5%;
     transform: translateY(-5%);;
-  }
+  } */
 }

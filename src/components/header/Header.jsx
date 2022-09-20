@@ -9,9 +9,9 @@ const Header = () => {
     <header id="header">
       <div className="container header__container">
         <div className="header__info">
-          <h4>Hello I'm</h4>
+          <h4>Olá, me chamo</h4>
           <h1 className="header__name">Fabio Silva</h1>
-          <h3 className="text-light">Front-end Developer</h3>
+          <h3 className="text-light">Desenvolvedor Front-end</h3>
           <div className="header__socials__text">
             <p className="socials__text"></p>
           </div>

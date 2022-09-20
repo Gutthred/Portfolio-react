@@ -39,7 +39,7 @@ const about = () => {
             >
               <summary className="about__card">
                 <FiUser className="about__card-icon" />
-                <h5>About me</h5>
+                <h5>Sobre mim</h5>
               </summary>
             </article>
             <article
@@ -52,7 +52,7 @@ const about = () => {
             >
               <summary className="about__card">
                 <FaAward className="about__card-icon" />
-                <h5>Experience</h5>
+                <h5>Experiência</h5>
               </summary>
             </article>
             <article
@@ -65,7 +65,7 @@ const about = () => {
             >
               <summary className="about__card">
                 <FaUserGraduate className="about__card-icon" />
-                <h5>Graduation</h5>
+                <h5>Graduação</h5>
               </summary>
             </article>
           </div>
@@ -79,8 +79,11 @@ const about = () => {
                   Desde pequeno sou apaixonado pelo mundo da tecnologia, passava
                   horas em frente ao computador e videogame.
                   <br /> Minha porta de entrada no mundo da programação foi
-                  quando aos treze anos de idade, criei meu próprio "MOD" de um
-                  jogo chamado Ragnarok Online.
+                  criando "MOD" de um jogo chamado Ragnarok Online, entretanto,
+                  o que me fez retornar à programação foi, a possibilidade de
+                  acessar o banco de dados para que conseguisse extrair e cruzar
+                  informações, onde era possível confeccionar relatórios que
+                  demonstrassem o cenário da empresa a qual trabalhava.
                 </small>
               )}
             </div>
@@ -88,8 +91,8 @@ const about = () => {
               {textForTag(activeText) == "experience" && (
                 <small>
                   No atual momento estou realizando uma transição carreira,
-                  <br /> sou formado em contabilidade pela Pontifícia Universidade Catolica
-                  de Campinas - "PUC-CAMP". <br />
+                  <br /> sou formado em contabilidade pela Pontifícia
+                  Universidade Catolica de Campinas - "PUC-CAMP". <br />
                   Iniciei minha carreira no departamento contábil de um
                   escritório e a última experiência foi em uma multinacional do
                   ramo da construção civil, <br /> onde desempenhava a função de
@@ -102,13 +105,15 @@ const about = () => {
             <div className="text__content">
               {textForTag(activeText) == "graduation" && (
                 <small>
-                  - Cursando Análise e Desenvolvimento de Software - UNIP, <br/>
-                 
-                  - Bacharelado em Ciências Contábeis - PUC-CAMP,<br/>
-        
-                  - Curso extensivo Internacional Accounting Standards - PUC-CAMP,<br/>
-
-                  - Curso extensivo Finanças e Controladoria - USP.<br/>
+                  - Cursando Análise e Desenvolvimento de Software - UNIP,{" "}
+                  <br />
+                  - Bacharelado em Ciências Contábeis - PUC-CAMP,
+                  <br />
+                  - Curso extensivo em Internacional Accounting Standards -
+                  PUC-CAMP,
+                  <br />
+                  - Curso extensivo em Finanças e Controladoria - USP.
+                  <br />
                 </small>
               )}
             </div>
