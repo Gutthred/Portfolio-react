@@ -20,7 +20,7 @@ const githubRepo = () => {
   );
 
   return (
-    <article>
+    <article className="project__container">
       {isFetching && (
         <span className="lds-spinner">
           <div></div>
@@ -53,6 +53,15 @@ const githubRepo = () => {
                 <small className="repo_description">{repo.description}</small>
               </div>
               <div className="project__a">
+                {repo.homepage && (
+                  <a
+                    href={`https:/${repo.homepage}`}
+                    target="__blank"
+                    className="btn btn-primary"
+                  >
+                    Live
+                  </a>
+                )}
                 <a
                   href={repo.html_url}
                   target="__blank"
