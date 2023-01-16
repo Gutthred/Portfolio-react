@@ -55,7 +55,7 @@ const githubRepo = () => {
               <div className="project__a">
                 {repo.homepage && (
                   <a
-                    href={`${repo.name}-gutthred.vercel.app`}
+                    href={repo.homepage}
                     target="__blank"
                     className="btn btn-primary"
                   >
