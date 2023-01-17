@@ -8,7 +8,7 @@ import './Header.css'
 const HeaderSocials = () => {
   return (
     <div className='header__socials'>
-        <a href="https://www.linkedin.com/in/fabio-silva-923bb8214"><BsLinkedin/></a>
+        <a href="https://www.linkedin.com/in/gutthred/"><BsLinkedin/></a>
         <a href="https://github.com/Gutthred"><BsGithub/></a>
         <a href="https://www.instagram.com/gutthred/"><BsInstagram/></a>
     </div>
